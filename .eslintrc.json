@@ -30,17 +30,24 @@
       "error",
       {
         "ts": "never",
-        "tsx": "never"
+        "tsx": "never",
+        "svg": "always",
+        "png": "always",
+        "jpg": "always",
+        "jpge": "always",
+        "css": "always"
       }
     ],
     "react/jsx-filename-extension": [
       1,
       {
         "extensions": [
-          ".tsx"
+          ".tsx",
+          ".jsx"
         ]
       }
     ],
+    "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
