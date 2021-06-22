@@ -1,1 +1,9 @@
-export const App = () => <p>Hello World</p>;
+import { Button } from '~/components/Button';
+
+export const App = () => (
+  <>
+    <Button />
+    <Button />
+    <Button />
+  </>
+);
