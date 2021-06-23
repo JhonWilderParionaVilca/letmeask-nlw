@@ -1,0 +1,12 @@
+.title {
+  font-size: 2.4rem;
+  font-family: var(--font-secondary);
+}
+.returnParragraph {
+  font-size: 1.4rem;
+  color: var(--gray-700);
+
+  > a {
+    color: var(--pink-900);
+  }
+}
