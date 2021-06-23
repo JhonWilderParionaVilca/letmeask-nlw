@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { FormSigIn } from '~/components';
 import { Aside } from '~/container';
 
@@ -9,7 +11,7 @@ export function NewSala() {
       <h2 className={style.title}>Cree una nueva sala</h2>
       <FormSigIn placeholder="Nombre de la sala" textBtn="Crear sala" />
       <p className={style.returnParragraph}>
-        ¿Quiere entrar en una sala existente? <a href="/">Click aqui</a>
+        ¿Quiere entrar en una sala existente? <Link to="/">Click aqui</Link>
       </p>
     </Aside>
   );
