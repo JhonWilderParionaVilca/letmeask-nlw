@@ -1,9 +1,9 @@
-import { Button } from '~/components/Button';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Home, NewSala } from '~/pages';
 
 export const App = () => (
-  <>
-    <Button />
-    <Button />
-    <Button />
-  </>
+  <BrowserRouter>
+    <Route path="/" exact component={Home} />
+    <Route path="/rooms/new" component={NewSala} />
+  </BrowserRouter>
 );
