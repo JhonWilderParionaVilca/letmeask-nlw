@@ -29,8 +29,10 @@ export function Aside({ children }: AsideProps) {
         </div>
       </aside>
       <main className={style.main}>
-        <img src={logoImg} alt="letmeask" className={style.mainLogo} />
-        {children}
+        <div className={style.container}>
+          <img src={logoImg} alt="letmeask" className={style.mainLogo} />
+          {children}
+        </div>
       </main>
     </div>
   );

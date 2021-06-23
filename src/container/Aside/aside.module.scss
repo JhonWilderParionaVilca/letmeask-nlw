@@ -3,51 +3,63 @@
 }
 
 .main {
+  padding: 0 3.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 32rem;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+
+    .mainLogo {
+      align-self: center;
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 900px) {
   .container {
     display: flex;
     align-items: stretch;
-    min-height: 100vh;
+    height: 100vh;
   }
 
   .aside {
     flex: 6;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     justify-content: center;
     background-color: var(--primary-500);
 
-    padding: 2rem 1rem;
+    padding: 5rem 8rem;
 
     .asideTitle {
-      font-size: 2.5rem;
-      font-family: var(--font-secondary);
+      font: 700 2.6rem var(--font-secondary);
+      line-height: 3.8rem;
+      margin-top: 1rem;
       display: block;
-      text-transform: uppercase;
       text-align: left;
-      color: var(--white-details);
+      color: var(--white);
     }
 
     .asideParrafo {
-      color: var(--white-details);
-      font-size: 1.8rem;
+      color: var(--white-bg);
+      font-size: 1.7rem;
+      line-height: 1.9rem;
       display: block;
     }
   }
 
   .main {
     flex: 8;
-
-    .mainLogo {
-      margin-bottom: 4rem;
-    }
   }
 }
