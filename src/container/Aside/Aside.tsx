@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { MessageImg } from '~/assets/img';
+import logoImg from '~/assets/img/Logo.svg';
 
 import style from './aside.module.scss';
 
@@ -27,7 +28,10 @@ export function Aside({ children }: AsideProps) {
           </p>
         </div>
       </aside>
-      <main className={style.main}>{children}</main>
+      <main className={style.main}>
+        <img src={logoImg} alt="letmeask" className={style.mainLogo} />
+        {children}
+      </main>
     </div>
   );
 }
