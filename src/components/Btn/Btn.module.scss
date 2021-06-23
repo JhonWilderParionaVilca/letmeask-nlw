@@ -1,0 +1,33 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  border: none;
+  color: var(--white);
+
+  padding: 0 3.2rem;
+  width: 100%;
+
+  transition: filter 0.2s;
+
+  &:not(:disabled):hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.red {
+  background-color: #ea4335;
+}
+
+.primary {
+  background-color: var(--primary-500);
+}
