@@ -2,6 +2,7 @@
   --primary-500: #835afd;
   --primary-900: #6f4bd8;
   --primary-gradient: linear-gradient(139.44deg, #485bff 0%, #ff59f8 96.19%);
+  --white: #fff;
   --white-bg: #f8f8f8;
   --white-details: #fefefe;
   --gray-500: #dbdcdd;
@@ -47,9 +48,15 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   color: var(--black);
-  font: var(--font-primary);
 }
 /* *1REM = 10PX */
+
+body,
+input,
+button,
+textarea {
+  font: var(--font-primary);
+}
 
 /* -------------------------------------------------------------------------- */
 /**                                $BoxSizing                                 */

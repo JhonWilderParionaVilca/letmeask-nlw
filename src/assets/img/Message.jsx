@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function Message(props) {
   return (
-    <svg width={290} height={380} fill="none" {...props}>
+    <svg width={320} height={400} fill="none" {...props}>
       <path
         opacity={0.5}
         d="M146.574 123.837c27.383-15.981 50.02-1.045 54.025 33.442.696 5.965-3.831 13.847-9.36 17.069l-89.329 52.166c-5.529 3.222-10.056.61-9.36-6.183 4.005-39.059 26.686-80.513 54.024-96.494z"
