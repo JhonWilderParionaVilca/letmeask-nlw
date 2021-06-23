@@ -21,12 +21,12 @@
 /**                              $ColorSelection                              */
 /* -------------------------------------------------------------------------- */
 ::-moz-selection {
-  background-color: var(--primary-500);
+  background-color: var(--primary-900);
   color: var(--white-details);
   text-shadow: none;
 }
 ::selection {
-  background-color: var(--primary-500);
+  background-color: var(--primary-900);
   color: var(--white-details);
   text-shadow: none;
 }
