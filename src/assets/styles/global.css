@@ -1,0 +1,78 @@
+:root {
+  --primary-500: #835afd;
+  --primary-900: #6f4bd8;
+  --primary-gradient: linear-gradient(139.44deg, #485bff 0%, #ff59f8 96.19%);
+  --white-bg: #f8f8f8;
+  --white-details: #fefefe;
+  --gray-500: #dbdcdd;
+  --gray-700: #a8a8b3;
+  --gray-900: #737380;
+  --black: #29292e;
+  --shadow: #050206;
+  --red-500: #e73f5d;
+  --red-900: #d73754;
+  --pink-500: #d67ee2;
+  --pink-900: #e559f9;
+
+  --font-primary: 400 1.6rem 'Roboto', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+/* -------------------------------------------------------------------------- */
+/**                              $ColorSelection                              */
+/* -------------------------------------------------------------------------- */
+::-moz-selection {
+  background-color: var(--primary-500);
+  color: var(--white-details);
+  text-shadow: none;
+}
+::selection {
+  background-color: var(--primary-500);
+  color: var(--white-details);
+  text-shadow: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/**                                 $HackRems                                 */
+/* -------------------------------------------------------------------------- */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  background-color: var(--white-bg);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--black);
+  font: var(--font-primary);
+}
+/* *1REM = 10PX */
+
+/* -------------------------------------------------------------------------- */
+/**                                $BoxSizing                                 */
+/* -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* -------------------------------------------------------------------------- */
+/**                              $ResponsiveImg                               */
+/* -------------------------------------------------------------------------- */
+img {
+  max-width: 100%;
+  border-width: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* -------------------------------------------------------------------------- */
+/**                              $Enlaces                                     */
+/* -------------------------------------------------------------------------- */
+a {
+  text-decoration: none;
+}
