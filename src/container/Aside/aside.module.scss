@@ -1,0 +1,49 @@
+.aside {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+  }
+
+  .aside {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    background-color: var(--primary-500);
+
+    padding: 2rem 1rem;
+
+    .asideTitle {
+      font-size: 2.5rem;
+      font-family: var(--font-secondary);
+      display: block;
+      text-transform: uppercase;
+      text-align: left;
+      color: var(--white-details);
+    }
+
+    .asideParrafo {
+      color: var(--white-details);
+      font-size: 1.8rem;
+      display: block;
+    }
+  }
+
+  .main {
+    flex: 8;
+  }
+}
