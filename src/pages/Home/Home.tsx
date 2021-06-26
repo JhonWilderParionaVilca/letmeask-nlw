@@ -1,11 +1,13 @@
+import { FormEvent } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Aside } from '~/container';
 
+import { Aside } from '~/container';
 import { FormSigIn, Btn } from '~/components';
 
-import style from './Home.module.scss';
-import { GoogleIcon } from '~/assets/img';
 import { useAuth } from '~/hooks/useAuth';
+
+import { GoogleIcon } from '~/assets/img';
+import style from './Home.module.scss';
 
 export function Home() {
   const { user, signInGoogle } = useAuth();
@@ -16,6 +18,10 @@ export function Home() {
       await signInGoogle();
     }
     history.push('/rooms/new');
+  };
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
   };
 
   return (
@@ -31,6 +37,7 @@ export function Home() {
         <FormSigIn
           placeholder="Digite el Código de la sala"
           textBtn="Entrar a la sala"
+          handleSubmit={handleSubmit}
         />
       </>
     </Aside>
