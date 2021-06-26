@@ -5,11 +5,16 @@ import { FormSigIn, Btn } from '~/components';
 
 import style from './Home.module.scss';
 import { GoogleIcon } from '~/assets/img';
+import { useAuth } from '~/hooks/useAuth';
 
 export function Home() {
+  const { user, signInGoogle } = useAuth();
   const history = useHistory();
 
-  const handleGoogleSigIn = () => {
+  const handleGoogleSigIn = async () => {
+    if (!user) {
+      await signInGoogle();
+    }
     history.push('/rooms/new');
   };
 
